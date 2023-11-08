@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/tinywow_Logo-Ecoroteiros_38057809.jpg" type="image/x-icon">
+	<title>Descobrindo a natureza sustentável</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<ul>
+				<li class="top-nav"><a class="nav-link" href="#about">Sobre nós</a></li>
+				<li class="top-nav"><a class="nav-link" href="#places">Lugares</a></li>
+				<li class="top-nav"><a class="nav-link" href="#reports">Relatos</a></li>
+				<li class="top-nav"><a class="nav-link" href="#itineraries">Roteiros de Viagem</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div id="contact-button" onclick="toggle('contact-form')">
+		<img src="assets/mensagem.png" alt="Icone de mensagem">
+	</div>
+
+	<div id="contact-form">
+		<fieldset>
+			<legend>Envie-nos uma mensagem</legend>
+			<form class="form" action="https://formsubmit.co/Ecoroteiros45@gmail.com" method="POST">
+				<label for="name">Seu nome: </label>
+				<input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+				<label for="email">Digite seu email: </label>
+				<input type="email" name="email" id="email" placeholder="Informe seu email" required>
+				<label for="message">Fale conosco: </label>
+				<textarea name="message" placeholder="Digite aqui..." id="message" required></textarea>
+				<input type="hidden" name="_captcha" value="false">
+				<input type="hidden" name="_next" value="https://mrcsfranca.github.io/Site-Finalizacao/feedback">
+				<button type="submit">Enviar</button>
+		   </form>
+		</fieldset>
+	</div>
+
+	<section>
+		<div id="main-bg">
+			<div>
+				<img id="logo" src="assets/Logo-Ecoroteiros.jpeg" alt="Logo-Ecoroteiros com árvore com o tronco azul representando um rio">
+				<p>Caminhe com respeito, viaje com sustentabilidade</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div id="about"> <!-- Sessão explicando quem somos nós -->
+			<h3>Viaje com sustentabilidade</h3>
+			<div>
+				<p>Viajar é uma das experiências mais enriquecedoras da vida, mas também pode ter um impacto significativo no meio ambiente e nas comunidades locais. No entanto, é possível explorar o mundo de forma sustentável, minimizando o impacto negativo e maximizando os benefícios para todos. 
+				É uma maneira de explorar o mundo de forma significativa, contribuindo para a preservação do planeta e o bem-estar das comunidades locais. Ao adotar práticas responsáveis durante suas viagens, você pode desfrutar de experiências enriquecedoras e contribuir para um futuro mais sustentável.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores odit obcaecati beatae? Molestiae animi sed blanditiis amet repudiandae fugit, libero voluptate rem perferendis, dolores incidunt cupiditate expedita consectetur omnis ullam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem exercitationem, placeat quo voluptatibus in repellat eligendi, labore eaque explicabo veniam sunt perferendis? Nostrum sequi facilis ad eaque natus, dolorum quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut labore quidem deleniti ut eos perferendis rerum ullam consequuntur, excepturi cupiditate recusandae officia quasi nihil doloremque, facere voluptatem tempora esse! Facilis.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="eco"> <!-- Explicando o que é ecoturismo -->
+		<div>
+			<h3>Mas o que é ecoturismo?</h3>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda, tempora tenetur consequatur quisquam, tempore odit similique ducimus quas non laudantium delectus autem vero excepturi eligendi quos, debitis voluptas? Eum, facilis.</p>
+		</div>
+	</section>
+
+	<div id="places"> <!-- Sessão de lugares -->
+		<h3>Lugares</h3>
+		<p>Confira os incríveis lugares por onde você vai passar.</p>
+		<div class="container">
+			<!-- Fazer o carrossel com imagens dos lugares aqui  -->
+			<button type="button" class="arrow-left control" aria-label="Previous image">◄</button>
+			<button type="button" class="arrow-right control" aria-label="Next image">►</button>
+
+			<div class="gallery-wrapper">
+				<div class="gallery" onclick="mostra('places-desc')">
+					<a href="#Taquara"><img src="https://source.unsplash.com/random/250x250/?computer" alt="computer images" class="item current-item"></a>
+					<a href="#Encontro-rios"><img src="assets/zyro-image.png" alt="science images" class="item current-item"></a>
+					<a href="#Ilha"><img src="https://source.unsplash.com/random/250x250/?happy" alt="happy images" class="item current-item"></a>
+					<a href="#Morrinhos"><img src="https://source.unsplash.com/random/250x250/?shirt" alt="shirt images" class="item current-item"></a>
+					<a href="#Cachoeira"><img src="assets/Cachoeira Tamboara.jpeg" alt="life images" class="item current-item"></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="places-desc">
+			<div class="choose" id="Taquara">
+				<h3>Taquara</h3>
+				<p>
+					Descrição do Taquara 
+					Oq tem lá 
+					Localização
+				</p>
+			</div>
+			<div class="choose" id="Encontro-rios">
+				<h3>Econtro dos rios</h3>
+				<p>
+					Falar sobre encontro dos rios
+				</p>
+			</div>
+			<div class="choose" id="Ilha">
+				<h3>Ilha dos Pneus</h3>
+				<p>
+					falar sobre ilha dos pneus, colocando mais texto só pra testar
+				</p>
+			</div>
+			<div class="choose" id="Morrinhos">
+				<h3>3 Morrinhos</h3>
+				<p>
+					falar sobre 3 morrinhos
+				</p>
+			</div>
+			<div class="choose" id="Another">
+				<h3>Outro lugar</h3>
+				<p>
+					falar de outro lugar
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="itineraries"> <!-- Roteiros de viagem -->
+		<h3>Roteiros de viagem</h3>
+		<div class="itineraries-cards">
+			<div class="itineraries-box"> <!-- Roteiro 1 -->
+				<div>
+					<h4>Aventura na natureza</h4>
+					<div>
+						<h5 class="price">R$15,00</h5>
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam fuga dignissimos ipsam molestias modi eveniet delectus in dolorum perferendis. Nesciunt nihil libero et non quo odio sunt corporis voluptatum ad.</p>
+					</div>
+				</div>
+			</div>
+			<div class="itineraries-box"> <!-- Roteiro 2 -->
+				<div>
+					<h4>Plano B</h4>
+					<div>
+						<h5 class="price">R$20,00</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem alias placeat consectetur veritatis quibusdam nobis, dolorem autem at iusto ipsa doloremque corrupti ad harum corporis illo unde velit eligendi consequuntur.</p>
+					</div>
+				</div>
+			</div>
+			<div class="itineraries-box"> <!-- Roteiro 3 -->
+				<div>
+					<h4>Plano C</h4>
+					<div>
+						<h5 class="price">R$25,00</h5>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum quam iure ipsa placeat sit vero accusantium, reiciendis deserunt inventore. Molestias ipsam ipsa numquam labore deserunt laudantium doloribus laborum facilis.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div id="reports"> <!-- Sessão de relatos de pessoas que turistaram conosco-->
+	<h3>Relatos</h3>
+	<p>Confira aqui relatos de pessoas que confiram no nosso trabalho.</p>
+	<div class="reports-container">
+		<div class="reports-cards">
+			<img src="assets/account.png" alt="Imagem de perfil">
+			<div>
+				<h5>Wanderlei Nelton</h5>
+				<p>"Ótimo suporte"</p>
+			</div>
+		</div>
+		<div class="reports-cards">
+			<img src="assets/account.png" alt="Imagem de perfil">
+			<div>
+				<h5>Isabele Mesquita</h5>
+				<p>"A empresa consegue te colocar em uma situação de reflexão enquanto se diverte. 					Excelente"</p>
+			</div>
+		</div>
+		<div class="reports-cards">
+			<img src="assets/account.png" alt="Imagem de perfil">
+			<div>
+				<h5>Pedro Arroz</h5>
+				<p>"Assinei o plano Premium e adorei cada momento."</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<footer> <!-- Rodapé do site -->
+	<div>
+		<p>&copy; Site criado pela equipe <a href="https://Instagram.com/Eco.roteiros" target="_blank">Cnpjotos</a> do Colégio Sesi da Industria - Loanda;</p>
+	</div>
+</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>

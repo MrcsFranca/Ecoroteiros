@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Poppins:wght@300;400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #2b3137;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+
+	width: 80%;
+	height: 70%;
+
+	background: #161b20;
+
+	border-radius: 5px;
+
+	transform: translate(-50%, -50%);
+}
+
+.box > h1 {
+	margin: 15px;
+
+	color: aliceblue;
+
+	text-decoration: underline;
+	font-family: 'Poppins';
+	font-size: 35px;
+}
+
+.box > h3 {
+	margin: 15px;
+
+	color: aliceblue;
+
+	font-family: 'Poppins';
+	font-size: 25px;
+}
+
+.box > p {
+	margin: 15px;
+
+	color: aliceblue;
+
+	font-family: 'Poppins';
+}
+
+.box > p > a {
+	color: aliceblue;
+}
+
+.box > p > a:hover {
+	color: skyblue;
+}
+
+@media screen and (min-width: 690px) {
+	.box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
