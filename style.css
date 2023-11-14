@@ -153,7 +153,7 @@ ul {
 .form button {
 	display: block;
 
-	width: 95%;
+	width: 100%;
 
 	color: var(--txt-color);
 }
@@ -393,6 +393,12 @@ div#places > p {
 	background: var(--places-desc-color);
 
 	border: 2px solid rgb(255, 255, 255);
+
+	overflow: auto;
+}
+
+.choose::-webkit-scrollbar {
+	display: none;
 }
 
 .choose > h3 {
@@ -401,6 +407,11 @@ div#places > p {
 	
 	font-size: var(--font-size);
 	border-bottom: 2px solid var(--divider);
+}
+
+.choose > h3 > a {
+	color: black;
+	text-decoration: none;
 }
 
 .choose > p {
