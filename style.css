@@ -224,7 +224,7 @@ ul {
 */
 
 #main-bg {
-	background-image: url(https://images.unsplash.com/photo-1614000574408-b5387fd30819?auto=format&fit=crop&q=80&w=1450&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background-image: url(assets/rio-parana1.png);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -286,7 +286,7 @@ div#about > div > p {
 }
 
 #eco {
-	background-image: url(https://grupoqualityambiental.com.br/wp-content/uploads/2020/12/Arauc%C3%A1ria-1030x687.jpg);
+	background-image: url(assets/Cachoeira\ Tamboara.jpeg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -470,6 +470,7 @@ div#places > p {
 
 .itineraries-box > div > div > p {
 	margin: 10px 10px 0px 10px;
+	color: rgb(255, 255, 255)
 }
 
 .price {
@@ -522,6 +523,8 @@ div#reports > p {
 	width: 50px;
 	height: 50px;
 	margin: 0px 10px 0px 10px;
+	border-radius: 50%;
+	background-size: cover;
 }
 
 footer {
