@@ -15,7 +15,7 @@ Grandes Telas: acima de 1200
 	--bg-color: #2b3137;
 	--divider: rgb(99, 99, 99);
 	--txt-color: white;
-	--title-color: #15ff00;
+	--title-color: #1fe8a1;
 	--arrow: #93b8d8;
 	--arrow-hover: #69727a;
 	--itineraries-cards-color: #30373b;
@@ -226,7 +226,7 @@ ul {
 #main-bg {
 	background-image: url(assets/rio-parana1.png);
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-position: center;
 
 	display: flex;
@@ -283,6 +283,7 @@ div#about > div > p {
 	padding: 10px;
 	font-size: 1.1em;
 	width: 450px;
+	text-align: justify;
 }
 
 #eco {
@@ -310,6 +311,7 @@ div#about > div > p {
 #eco > div > p {
 	color: var(--txt-color);
 	margin: 10px 34px 34px;
+	text-align: justify;
 }
 
 #places {
@@ -395,6 +397,7 @@ div#places > p {
 	border: 2px solid rgb(255, 255, 255);
 
 	overflow: auto;
+
 }
 
 .choose::-webkit-scrollbar {
@@ -405,18 +408,26 @@ div#places > p {
 	display: flex;
 	justify-content: center;
 	
-	font-size: var(--font-size);
+	font-size: 1.3em;
 	border-bottom: 2px solid var(--divider);
 }
 
+.choose > h3 > a:hover {
+	color: rgb(131, 126, 126);
+
+	transition: .3s;
+}
+
 .choose > h3 > a {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
 .choose > p {
 	margin: 10px;
-	text-indent: 5px;
+	text-align: center;
+
+	color: var(--txt-color);
 }
 
 .choose:hover {
@@ -481,13 +492,14 @@ div#places > p {
 
 .itineraries-box > div > div > p {
 	margin: 10px 10px 0px 10px;
+	text-align: justify;
 	color: rgb(255, 255, 255)
 }
 
 .price {
 	display: flex;
 	justify-content: center;
-	color: rgb(0, 119, 255);
+	color: #2399eb;
 	font-size: 1.2em;
 }
 
@@ -561,6 +573,11 @@ footer > div > p > a {
 	color: var(--txt-color);
 	text-decoration: none;
 	font-weight: bold;
+}
+
+footer > div > p > a:hover {
+	color: rgb(216, 210, 210);
+	transition: .3s;
 }
 
 @media screen and (min-width: 690px) {
