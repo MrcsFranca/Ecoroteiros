@@ -37,7 +37,12 @@ controls.forEach((control) => {
 })
 
 function mostra(el) {
-	document.getElementById(el).style.display = 'flex'
+	var show = document.getElementById(el).style.display
+	if (show == 'none') {
+		document.getElementById(el).style.display = 'flex'
+	} else {
+		document.getElementById(el).style.display = 'none'
+	}
 }
 
 function toggle(obj) {

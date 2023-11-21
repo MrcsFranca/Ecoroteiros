@@ -41,7 +41,7 @@ body {
 }
 
 
-ul {
+#list {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
@@ -224,7 +224,7 @@ ul {
 */
 
 #main-bg {
-	background-image: url(assets/rio-parana1.png);
+	background-image: url(assets/taquara/araras.jpeg);
 	background-size: cover;
 	background-attachment: scroll;
 	background-position: center;
@@ -287,10 +287,10 @@ div#about > div > p {
 }
 
 #eco {
-	background-image: url(assets/Cachoeira\ Tamboara.jpeg);
+	background-image: url(assets/taquara/sun-dark-landscape.jpeg);
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: center;
+	background-attachment: scroll;
+	background-position: right;
 	height: 100vh;
 
 	display: flex;
@@ -298,6 +298,12 @@ div#about > div > p {
 	align-items: center;
 	flex-direction: column;
 	border-bottom: 1px solid var(--divider);
+}
+
+#eco > div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 #eco > div > h3 {
@@ -310,8 +316,19 @@ div#about > div > p {
 
 #eco > div > p {
 	color: var(--txt-color);
-	margin: 10px 34px 34px;
+	margin: 10px 30px 34px;
 	text-align: justify;
+}
+
+#eco > div > ul > li {
+	color: var(--txt-color);
+	text-align: justify;
+	margin: 10px 30px 20px;
+}
+
+#eco > div > p,
+#eco > div > ul {
+	max-width: 500px;
 }
 
 #places {
@@ -407,6 +424,7 @@ div#places > p {
 .choose > h3 {
 	display: flex;
 	justify-content: center;
+	color: white;
 	
 	font-size: 1.3em;
 	border-bottom: 2px solid var(--divider);
@@ -434,6 +452,23 @@ div#places > p {
 	box-shadow: 2px 2px 7px 5px rgba(0, 0, 0, 0.514);
 }
 
+#interect {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#interect > h3 {
+	color: var(--title-color);
+	font-size: var(--font-size);
+}
+
+#interect > iframe {
+	border-radius: 10px;
+	max-width: 320px;
+}
+
 #itineraries {
 	border-bottom: 1px solid var(--divider);
 }
@@ -453,6 +488,10 @@ div#places > p {
 	flex-wrap: wrap;
 	gap: 50px;
 	margin-top: 10px;
+}
+
+.itineraries-cards > a {
+	text-decoration: none;
 }
 
 .itineraries-box {
@@ -492,7 +531,7 @@ div#places > p {
 
 .itineraries-box > div > div > p {
 	margin: 10px 10px 0px 10px;
-	text-align: justify;
+	text-align: center;
 	color: rgb(255, 255, 255)
 }
 
@@ -587,6 +626,14 @@ footer > div > p > a:hover {
 
 	div#main-bg > div > p {
 		font-size: 1.5em;
+	}
+
+	#eco {
+		background-position: center;
+	}
+
+	#interect > iframe {
+		max-width: none;
 	}
 
 	.arrow-left,

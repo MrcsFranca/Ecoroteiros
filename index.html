@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="assets/new-logo.jpeg" type="image/x-icon">
-	<title>Descobrindo a natureza sustentável</title>
+	<title>Eco🗺roteiros</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-	<header>
+	<header> <!-- Cabeçalho do site -->
 		<nav>
-			<ul>
+			<ul id="list">
 				<li class="top-nav"><a class="nav-link" href="#about">Sobre nós</a></li>
 				<li class="top-nav"><a class="nav-link" href="#places">Lugares</a></li>
 				<li class="top-nav"><a class="nav-link" href="#reports">Relatos</a></li>
@@ -20,11 +20,11 @@
 		</nav>
 	</header>
 
-	<div id="contact-button" onclick="toggle('contact-form')">
+	<div id="contact-button" onclick="toggle('contact-form')"> <!-- Botão de contato -->
 		<img src="assets/mensagem.png" alt="Icone de mensagem">
 	</div>
 
-	<div id="contact-form">
+	<div id="contact-form"> <!-- Formulário para contato -->
 		<fieldset>
 			<legend>Envie-nos uma mensagem</legend>
 			<form class="form" action="https://formsubmit.co/Ecoroteiros45@gmail.com" method="POST">
@@ -41,7 +41,7 @@
 		</fieldset>
 	</div>
 
-	<section>
+	<section> <!-- Imagem principal -->
 		<div id="main-bg">
 			<div>
 				<img id="logo" src="assets/new-logo.jpeg" alt="Logo-Ecoroteiros com árvore com o tronco azul representando um rio">
@@ -49,11 +49,11 @@
 		</div>
 	</section>
 
-	<section>
-		<div id="about"> <!-- Sessão explicando quem somos nós -->
+	<section> <!-- Sessão explicando quem somos nós -->
+		<div id="about">
 			<h3>Quem somos nós?</h3>
 			<div>
-				<p>Nossa equipe, formada por alunos do terceiro ano do ensino médio do Colégio Sesi Loanda, está entusiasmada em unir forças para criar um impacto positivo. Com o intuito de promover a consciência ambiental e realçar as maravilhas naturais, o Instagram que idealizamos será um espaço para compartilhar informações sobre os pontos turísticos ecológicos e sustentáveis no Noroeste do Paraná. Além disso, planejamos disponibilizar dados e curiosidades sobre a preservação da biodiversidade local, os esforços de conservação e os desafios enfrentados pela região em relação ao meio ambiente.</p>
+				<p>Nossa equipe, formada por alunos do terceiro ano do ensino médio do Colégio Sesi Loanda, está entusiasmada em unir forças para criar um impacto positivo no meio ambiente. Com o intuito de promover a consciência ambiental e realçar as maravilhas naturais, o Instagram e o TikTok que idealizamos será um espaço para compartilhar informações sobre os pontos turísticos ecológicos e sustentáveis no Noroeste do Paraná. Além disso, planejamos disponibilizar dados e curiosidades sobre a preservação da biodiversidade local, os esforços de conservação e os desafios enfrentados pela região em relação ao meio ambiente.</p>
 				<p>Cada postagem será mais do que apenas uma foto cativante; será uma janela para sensibilizar as pessoas sobre a importância da preservação ambiental e da sustentabilidade. Vamos não só destacar as belezas naturais da região, mas também compartilhar dicas práticas para visitas responsáveis, promovendo a valorização e a proteção desses tesouros naturais para as gerações futuras. Este espaço digital se tornará um ponto de encontro para aqueles que desejam descobrir, apreciar e ajudar a preservar as paisagens, rios, trilhas e reservas naturais do Noroeste do Paraná.
 				</p>
 			</div>
@@ -64,12 +64,17 @@
 		<div>
 			<h3>Mas o que é ecoturismo?</h3>
 			<p>Ecoturismo é uma forma de turismo que busca explorar e preservar ambientes naturais, promovendo a conservação, conscientização e minimizando o impacto ambiental. Sua importância reside em promover a sustentabilidade, conservação da natureza e conscientização ambiental. Os benefícios incluem a preservação de ecossistemas, geração de empregos locais, valorização cultural e incentivo à conservação da biodiversidade.</p>
+			<ul>
+				<li>Conservação da Natureza: O foco principal é a preservação dos ambientes naturais.</li>
+				<li>Educação Ambiental: O ecoturismo busca informar e educar os visitantes sobre a importância da conservação e dos ecossistemas locais.</li>
+				<li>Sustentabilidade: Práticas sustentáveis são essenciais. A ideia é que o turismo não prejudique a capacidade dos ecossistemas de se regenerarem.</li>
+			</ul>			
 		</div>
 	</section>
 
 	<div id="places"> <!-- Sessão de lugares -->
 		<h3>Lugares</h3>
-		<p>Confira os incríveis lugares por onde você vai passar.</p>
+		<p>Confira os lugares incríveis por onde você vai passar.</p>
 		<div class="container">
 			<!-- Fazer o carrossel com imagens dos lugares aqui  -->
 			<button type="button" class="arrow-left control" aria-label="Previous image">◄</button>
@@ -77,7 +82,7 @@
 
 			<div class="gallery-wrapper">
 				<div class="gallery" onclick="mostra('places-desc')">
-					<a href="#Taquara"><img src="https://source.unsplash.com/random/250x250/?computer" alt="computer images" class="item current-item"></a>
+					<a href="#Taquara"><img src="assets/taquara/stream.jpeg" alt="computer images" class="item current-item"></a>
 					<a href="#Encontro-rios"><img src="assets/zyro-image.png" alt="science images" class="item current-item"></a>
 					<a href="#Ilha"><img src="assets/ilha-dos-pneus.jpeg" alt="happy images" class="item current-item"></a>
 					<a href="#Morrinhos"><img src="assets/3-morrinhos.jpg" alt="shirt images" class="item current-item"></a>
@@ -88,78 +93,88 @@
 
 		<div id="places-desc">
 			<div class="choose" id="Taquara">
-				<h3><a href="">Taquara</a></h3>
+				<h3>Taquara</h3>
 				<p>
-					Descrição do Taquara 
-					Oq tem lá 
-					Localização
+					Aqueles que moram na região sempre estão presentes nessas lindas águas. Porém, quase nenhum morador conhece sua nascente. Conosco, você vai ter a experiência de vivenciar um local de paz após uma linda trilha repleta de fauna e flora e conhecer a origem desse lindo córrego.
 				</p>
 			</div>
 			<div class="choose" id="Encontro-rios">
-				<h3><a href="https://jornalnoroeste.com/pagina/geografia/tres-morrinhos-combinacao-de-turismo-e-escalada-para-quem-quer-aventura-e-uma-visao-incrivel" target="_blank">Econtro dos rios</a></h3>
+				<h3><a href="https://g1.globo.com/pr/parana/ferias-verao/2015/noticia/2014/12/encontro-dos-rios-paranapanema-e-parana-atraem-turistas-de-todo-o-pais.html" target="_blank">Econtro dos rios</a></h3>
 				<p>
-					O encontro dos rios Paraná e Paranapanema ocorre na região sul do Brasil, próximo à divisa entre os estados de São Paulo e Paraná. Esse ponto de confluência é conhecido como Porto São José. O Rio Paraná é um dos mais extensos da América do Sul, e o Paranapanema é um de seus afluentes importantes. A junção desses rios forma um cenário natural impressionante, destacando-se pela beleza paisagística e pela importância ambiental para a região.
+					O encontro dos rios Paraná e Paranapanema ocorre na região sul do Brasil, próximo à divisa entre os estados de São Paulo e Paraná. Esse ponto de confluência é conhecido como Porto São José. O Rio Paraná é um dos mais extensos da América do Sul e o Paranapanema é um de seus afluentes importantes. A junção desses rios forma um cenário natural impressionante, destacando-se pela beleza paisagística e pela importância ambiental para a região.
 				</p>
 			</div>
 			<div class="choose" id="Ilha">
-				<h3><a href="">Ilha dos Pneus</a></h3>
+				<h3><a href="https://www.instagram.com/portomaringaoficial/" target="_blank">Ilha dos Pneus</a></h3>
 				<p>
 					Ilha do Guadalupe, também conhecida por Ilha dos Pneus, próximo ao Porto Maringá. A pequena ilha se destaca pela natureza exuberante, pela linda praia e aconchego, atraindo os casais apaixonados de toda a região.
 				</p>
 			</div>
 			<div class="choose" id="Morrinhos">
-				<h3><a href="">3 Morrinhos</a></h3>
+				<h3><a href="https://jornalnoroeste.com/pagina/geografia/tres-morrinhos-combinacao-de-turismo-e-escalada-para-quem-quer-aventura-e-uma-visao-incrivel" target="_blank">3 Morrinhos</a></h3>
 				<p>
 					O Parque Municipal dos Três Morrinhos está situado no município de Terra Rica e conta com uma paisagem única na região. Este sítio geológico constitui um grupamento de elevações alongadas, compostas de arenitos silicificados, formando morros testemunhos, que se destacam na paisagem regional.
 				</p>
 			</div>
-			<div class="choose" id="Another">
-				<h3><a href="">Cachoeira de Tamboara</a></h3>
+			<div class="choose" id="Cachoeira">
+				<h3><a href="https://www.paranaturismo.com.br/tamboara/" target="_blank">Cachoeira de Tamboara</a></h3>
 				<p>
-					falar de outro lugar
+					As famosas cachoeiras de Tamboara são diversas, cada uma contém uma beleza encantadora para você, visitante, apreciar e relaxar diante dessas belezas naturais. Ótima escolha para se divertir com famílias e amigos tendo em vista a falta de lotação do local.
 				</p>
 			</div>
+			<div id="interect">
+				<h3>Confira no mapa</h3>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235046.959008825!2d-52.965831014347685!3d-23.001411040593087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700489754601!5m2!1spt-BR!2sbr" width="600" height="450" style="border:5;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
 		</div>
+
+		
 
 	</div>
 
 	<div id="itineraries"> <!-- Roteiros de viagem -->
 		<h3>Roteiros de viagem</h3>
 		<div class="itineraries-cards">
-			<div class="itineraries-box"> <!-- Roteiro 1 -->
-				<div>
-					<h4>Aventura na natureza</h4>
+			<a href="https://mrcsfranca.github.io/Ecoroteiros/buy.html">
+				<div class="itineraries-box"> <!-- Roteiro 1 -->
 					<div>
-						<h5 class="price">R$15,00</h5>
-						<p>Duração de 2 dias, com destino a um lugar de sua escolha, com atividades de lazer reduzidas, (incluindo somente o básico da programação local). Acomodação em hotel econômico, tendo café da manhã como refeição do hotel.</p>
+						<h4>Caminho Sustentável</h4>
+						<div>
+							<h5 class="price">R$15,00</h5>
+							<p>Duração de 2 dias, com destino a um lugar de sua escolha, com atividades de lazer reduzidas, (incluindo somente o básico da programação local). Acomodação em hotel econômico, tendo café da manhã como refeição do hotel.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="itineraries-box"> <!-- Roteiro 2 -->
-				<div>
-					<h4>Plano B</h4>
+			</a>
+			<a href="https://mrcsfranca.github.io/Ecoroteiros/buy.html">
+				<div class="itineraries-box"> <!-- Roteiro 2 -->
 					<div>
-						<h5 class="price">R$20,00</h5>
-						<p>Duração de 4 dias, com destino a 3 lugares de sua escolha, com atividades de lazer, (incluindo a programação local + nosso roteiro extra). Acomodação em hotel 4 estrelas, tendo café da manhã, almoço e café da tarde como refeições do hotel.</p>
+						<h4>Aventura na Natureza</h4>
+						<div>
+							<h5 class="price">R$20,00</h5>
+							<p>Duração de 4 dias, com destino a 3 lugares de sua escolha, com atividades de lazer, (incluindo a programação local mais o nosso roteiro extra). Acomodação em hotel 4 estrelas, tendo café da manhã, almoço e café da tarde como refeições do hotel.</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="itineraries-box"> <!-- Roteiro 3 -->
-				<div>
-					<h4>Plano C</h4>
+			</a>
+			<a href="https://mrcsfranca.github.io/Ecoroteiros/buy.html">
+				<div class="itineraries-box"> <!-- Roteiro 3 -->
 					<div>
-						<h5 class="price">R$25,00</h5>
-						<p>Duração de 7 dias, com destino a 5 lugares de sua escolha, com atividades de lazer, incluindo tudo de melhor que os devidos locais tem a oferecer (Programação local + nosso roteiro extra). Acomodação em hotel 5 , tendo todas as refeições incluídas.</p>
+						<h4>Amigo Ecológico</h4>
+						<div>
+							<h5 class="price">R$25,00</h5>
+							<p>Duração de 7 dias, com destino a todos os locais, com atividades de lazer, incluindo tudo de melhor que os devidos locais têm a oferecer (Programação local mais o nosso roteiro extra). Acomodação em hotel 5 estrelas com todas as refeições incluídas.</p>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
+			</a>
 	</div>
 	
 	</div>
 
 	<div id="reports"> <!-- Sessão de relatos de pessoas que turistaram conosco-->
 		<h3>Relatos</h3>
-		<p>Confira aqui relatos de pessoas que confiram no nosso trabalho.</p>
+		<p>Confira aqui relatos de pessoas que confiaram no nosso trabalho.</p>
 		<div class="reports-container">
 			<div class="reports-cards">
 				<img src="assets/woman-with-hair.png" alt="Imagem de perfil">
@@ -172,14 +187,14 @@
 				<img src="assets/mulher-ruiva.png" alt="Imagem de perfil">
 				<div>
 					<h5>Isabele Mesquita</h5>
-					<p>"A empresa consegue te colocar em uma situação de reflexão enquanto se diverte. 					Excelente"</p>
+					<p>"A empresa consegue te colocar em uma situação de reflexão enquanto se diverte. Excelente!"</p>
 				</div>
 			</div>
 			<div class="reports-cards">
 				<img src="assets/man-with-glass.png" alt="Imagem de perfil">
 				<div>
 					<h5>Pedro Arroz</h5>
-					<p>"Assinei o plano Premium e adorei cada momento."</p>
+					<p>"Assinei o pacote completo com a caminhada e adorei cada momento."</p>
 				</div>
 			</div>
 		</div>
@@ -188,7 +203,7 @@
 
 	<footer> <!-- Rodapé do site -->
 		<div>
-			<p>&copy; Site criado pela equipe <a href="https://Instagram.com/Eco.roteiros" target="_blank">Cnpjotos</a> do Colégio Sesi da Industria - Loanda;</p>
+			<p>&copy; Site criado pela equipe <a href="https://Instagram.com/Eco.roteiros" target="_blank">Cnpjotos</a> do Colégio Sesi da Indústria - Loanda;</p>
 		</div>
 	</footer>
 
