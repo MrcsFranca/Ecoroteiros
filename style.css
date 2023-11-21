@@ -292,6 +292,7 @@ div#about > div > p {
 	background-attachment: scroll;
 	background-position: right;
 	height: 100vh;
+	
 
 	display: flex;
 	justify-content: center;
