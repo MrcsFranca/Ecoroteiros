@@ -6,10 +6,3 @@
 
  ## Aprendizado obtido com a criação do site
  Com a construção deste site, aprendi a utilizar o git bash, tive um grande aprofundamento nos meus conhecimentos sobre html e css e aprofundei meus conhecimentos em javascript.
-
- ### Integrantes da equipe
- - Marcos França;
- - Antônio Kawassaki;
- - Júlia Pavarini;
- - Karla Casarin;
- - Sophia Castro.
